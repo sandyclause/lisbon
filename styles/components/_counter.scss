@@ -1,0 +1,96 @@
+.counterContainer{
+    background: #fafafa;
+    padding: 85px 0;
+    
+    .wrapper{
+        display: flex;
+        flex-flow: row wrap;
+
+    }
+
+    .counterTitleContainer, .timerContainer, .timerButtonsContainer{
+        padding: 0 35px;
+    }
+
+    .counterTitleContainer{
+        flex: 1 1 250px;
+        align-self: flex-start;
+        
+        .counterSubtitle{
+            color: #777777;
+            font-weight: 500;
+            text-transform: uppercase;
+            margin: 0 0 17px 0;
+        }
+        .counterTitle{
+            font-family: 'Raleway', sans-serif;
+            color: #222222;
+            font-size: 2.6rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    }
+    .timerContainer{
+        display: flex;
+        flex-flow: row nowrap;
+        font-size: 2.2rem;
+        align-items: center;
+
+        flex: 1 1 250px;
+        align-self: flex-start;
+
+        .timerUnit{
+            display: flex;
+            flex-flow: column wrap;
+
+            .numberContainer{
+                display: flex;
+                flex-flow: row nowrap;
+
+            }
+
+            p{
+                font-size: 1.5rem;
+                color: #777777;
+                padding: 2px;
+            }
+
+        }
+        
+        .number{
+            width: 37px;
+            height: 45px;
+            margin: 1px;
+            border-radius: 3px;
+            background: #333333;
+
+            color: #ffffff;
+            font-size: 2rem;
+            font-weight: 600;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .timerDivider{
+            position: relative;
+            top: -30px;
+            left: 0;
+        }
+    }
+    .timerButtonsContainer{
+        display: flex;
+        flex-flow: row nowrap;
+
+        flex: 1 1 250px;
+        align-self: flex-start;
+
+        a{
+            margin-right: 13px;
+
+            flex: 0 0 180px;
+        }
+    }
+
+}

@@ -1,0 +1,67 @@
+header{
+    background-image: url("../images/main-image.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width: 100%;
+    height: 900px;
+
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.headerTitleContainer{
+    text-align: center;
+    background: red;
+    max-width: 750px;
+
+    svg{
+        background: green;
+        margin: 0 auto;
+        font-size: 30px;
+    }
+    .headerTitle{
+        text-transform: uppercase;
+        margin: 0 0 57px;
+    }
+    .headerSubtitle{
+        font-size: 2.2rem;
+        font-style: italic;
+    }
+
+
+
+}
+
+.button{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 20px 43px;
+    display: inline;
+    border-radius: 5px;
+    
+    @at-root #{&}--pink{
+        background: #e85889;
+    }
+    @at-root #{&}--purple{
+        background: #463f8c;
+    }
+    @at-root #{&}__wide{
+        padding: 20px 60px;
+        margin: 20px 60px;        
+    }
+}

@@ -81,22 +81,15 @@
     }
     .timerButtonsContainer{
         display: flex;
-        justify-content: center;
-        width: 100%;
-        .center{
+        flex-flow: row wrap;
 
-            display: flex;
-            flex-flow: row nowrap;
+        flex: 1 1 440px;
+        align-self: flex-start;
 
-            flex: 1 1 250px;
-            align-self: flex-start;
-
-            a{
-                margin-right: 13px;
-
-                flex: 0 0 180px;
-            }
+        a{
+            margin-right: 13px;
         }
+        
     }
 
 }

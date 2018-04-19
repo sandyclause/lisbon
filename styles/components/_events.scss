@@ -1,11 +1,21 @@
 .eventsSectionContainer{
+    padding: 150px 0;
 
     @at-root{
         .sectionTitleContainer{
             display: flex;
             flex-flow: column nowrap;
             align-items: center;
-            margin: 0;
+            margin-bottom: 50px;
+            
+            &:after{
+                content: "";
+                background: #e85889;
+                height: 1px;
+                width: 64px;
+                margin-top: 30px;
+            }
+
         
             &__title{
                 color: #222222;
@@ -31,10 +41,16 @@
 
             .trioCard{
                 flex: 1 1 300px;
-                padding: 0 17px;
+                margin: 0 17px;
+
+                &:hover{
+                    box-shadow: 2px 4px 18px 0px rgba(0, 0, 0, 0.13);
+                }
 
                 .trioCardContent{
                     padding: 45px 25px;
+                    box-shadow: 2px 4px 18px 0px rgba(0, 0, 0, 0.03);
+
 
                     p:first-child{
                         color: #222222;
@@ -65,4 +81,62 @@
             }
         }
     }
+}
+
+.eventSubscribeContainer{
+    background: #463f8c;
+    color: #ffffff;
+
+    display: flex;
+    justify-content: center;
+
+    
+    .eventSubscribe{
+        max-width: 880px;
+        color: #ffffff;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+
+        @at-root{
+            .subscribeContainer{
+                display: flex;
+                flex-flow: row nowrap;
+
+                min-width: 530px;
+
+                input[type="text"]{
+                    flex: 3 0 200px;
+
+                    background: #463f8c;
+
+                    color: #ffffff;
+                    padding: 20px 25px;
+                    margin-right: -5px;
+                    border: 1px solid #ffffff;
+                    border-right: none;
+                    border-radius: 5px;
+                }
+                ::-moz-placeholder{
+                    color: #ffffff;
+                    background: #463f8c;
+                    font-size: 1.4rem;
+                    font-weight: 400;
+                    opacity: 1;
+                }
+            }
+        }
+    
+    }
+
+    h2{
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    p{
+        text-align: center;
+        font-size: 1.4rem;
+        font-weight: 400;
+    }
+
 }

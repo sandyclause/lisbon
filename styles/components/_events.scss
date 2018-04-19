@@ -26,9 +26,13 @@
 
         // cards section
         .trioCardsContainer{
-
+            display: flex;
+            flex-flow: row wrap;
 
             .trioCard{
+                flex: 1 1 200px;
+
+
  
                 .trioCardContent{
                     padding: 45px 25px;

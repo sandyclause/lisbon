@@ -39,29 +39,30 @@ header{
         font-style: italic;
     }
 
+    @at-root{
+        .button{
+            font-family: 'Raleway', sans-serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #ffffff;
+            padding: 20px 43px;
+            display: inline;
+            border-radius: 5px;
+            
+            &--pink{
+                background: #e85889;
+            }
+            &--purple{
+                background: #463f8c;
+            }
+            &--wide{
+                padding: 20px 60px;
+                margin: 20px 60px;        
+            }
+        }
+    }
 
 
-}
-
-.button{
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #ffffff;
-    padding: 20px 43px;
-    display: inline;
-    border-radius: 5px;
-    
-    @at-root #{&}--pink{
-        background: #e85889;
-    }
-    @at-root #{&}--purple{
-        background: #463f8c;
-    }
-    @at-root #{&}__wide{
-        padding: 20px 60px;
-        margin: 20px 60px;        
-    }
 }

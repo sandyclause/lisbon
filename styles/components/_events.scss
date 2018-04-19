@@ -1,0 +1,65 @@
+.eventsSectionContainer{
+
+    @at-root{
+        .sectionTitleContainer{
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            margin: 0;
+        
+            &__title{
+                color: #222222;
+                font-size: 3.6rem;
+                font-weight: 800;
+                text-transform: uppercase;
+                margin: 20px 0;
+            }
+        
+            &__subtitle{
+                color: #777777;
+                font-size: 1.7rem;
+                font-style: italic;
+                margin: 0;
+            }
+        }
+
+
+        // cards section
+        .trioCardsContainer{
+
+
+            .trioCard{
+ 
+                .trioCardContent{
+                    padding: 45px 25px;
+
+                    p:first-child{
+                        color: #222222;
+                        font-size: 1.6rem;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                    }
+                    p:last-child{
+                        color: #777777;
+                        font-size: 1.4px;
+                        font-weight: 400;
+                        font-family: 'Poppins', sans-serif; 
+                    }
+                    @at-root{
+                        .readMore{
+                            color: #e85889;
+                            font-size: 1.6rem;
+                            font-style: italic;
+                            text-decoration: none;
+
+                            &:hover{
+                            color: #463f8c;
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,79 @@
+.speakerContainer{
+
+
+    @at-root{
+        .speakerCardsContainer{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+
+            .speakerCard{
+                box-shadow: 2px 4px 18px 0px rgba(0, 0, 0, 0.03);
+
+                &:hover{
+                    box-shadow: 2px 4px 18px 0px rgba(0, 0, 0, 0.13);                  
+                    
+                    & .speakerSocial{
+                        display: flex;
+
+                        &:hover{
+                            background: #e85889;
+                            cursor: pointer;
+                        }
+                    }
+
+                    & .speakerInfo{
+                        background: #463f8c;
+                    }
+
+                    @at-root{
+                        .speakerInfo{
+                            
+                            .speakerName{
+                                font-size: 1.6rem;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                }
+            }
+
+            @at-root{
+                .speakerImg{
+                    position: relative;
+
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-end;
+    
+                    .speakerSocialContainer{
+                        position: absolute;
+                        margin-bottom: 35px;
+
+                        display: flex;                flex-flow: row nowrap;
+
+
+                        .speakerSocial{
+                            width: 34px;
+                            height: 34px;
+                            margin: 3px;
+                            border-radius: 50%;
+                            background: rgba(0,0,0,0.55);
+                            
+                            display: none;
+                            justify-content: center;
+                            align-items: center;
+                            
+                            a{
+                                color: white;
+                                font-size: 1.3rem;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

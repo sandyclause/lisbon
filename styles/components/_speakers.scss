@@ -9,6 +9,9 @@
 
             .speakerCard{
                 box-shadow: 2px 4px 18px 0px rgba(0, 0, 0, 0.03);
+                border-radius: 5px;
+                overflow: hidden;
+                margin-bottom: 55px;
 
                 &:hover{
                     box-shadow: 2px 4px 18px 0px rgba(0, 0, 0, 0.13);                  
@@ -26,16 +29,16 @@
                         background: #463f8c;
                     }
 
-                    @at-root{
-                        .speakerInfo{
-                            
-                            .speakerName{
-                                font-size: 1.6rem;
-                                font-weight: 600;
-                            }
-                        }
+                    & .speakerName{
+                        color: #ffffff;
                     }
+
+                    & .speakerTitle{
+                        color: #a6a0e3;
+                    }
+
                 }
+
             }
 
             @at-root{
@@ -74,6 +77,32 @@
                 }
 
             }
+
+
+            .speakerInfo{
+                display: flex;
+                flex-flow: column nowrap;
+
+                justify-content: center;
+                align-items: center;
+
+                padding: 22px 0;
+
+                .speakerName{
+                    font-size: 1.6rem;
+                    font-weight: 600;
+                    margin: 0;
+                    color: #222222;
+                }
+                .speakerTitle{
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 1.3rem;
+                    font-weight: 400;
+                    margin: 0;
+                    color: #777777;
+                }
+            }
+          
         }
     }
 }

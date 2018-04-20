@@ -11,10 +11,13 @@
     .trioCardsContainer{
         background: #ffffff;
         box-shadow: 2px 4px 16px 0px rgba(0, 0, 0, 0.04);
+        padding: 15px;
 
         .trioCard{
             background: #ececec;
-            padding: 30px 0 50px 0;
+            padding: 30px 0 70px 0;
+            margin: 15px;
+            border: 1px solid #ececec;
         }
     }
 
@@ -27,19 +30,25 @@
             color: #222222;
             font-size: 2rem;
             font-weight: 500;
+            margin: 20px 0 10px;
         }
         .pricingCardSubtitle{
             font-family: 'Poppins', sans-serif;
             color: #777777;
             font-weight: 300;
+
         }
 
         &:after{
             content: "";
             background: #222222;
             height: 1px;
-            width: 64px;
-            margin-top: 30px;            
+            width: 40px;
+            margin-top: 20px;            
+        }
+
+        p{
+            margin: 0;
         }
     }
 
@@ -67,7 +76,7 @@
         }
         p:nth-of-type(2){
             font-size: 4rem;
-            font-weight: 300;
+            font-weight: 500;
             align-self: flex-start;
             margin: 0 !important;
             padding: 0 !important;
@@ -88,9 +97,9 @@
     .priceContentContainer{
 
         p{
-            padding: 20px 70px;
+            padding: 20px 0px 20px 70px;
             margin: 0;
-            border-top: 2px dashed #e0e0e0;
+            border-top: 1.5px dashed #e0e0e0;
             color: #777777;
             font-size: 1.5rem;
             font-weight: 400;

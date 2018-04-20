@@ -1,5 +1,5 @@
 .speakerContainer{
-
+    padding: 120px 0 150px;
 
     @at-root{
         .speakerCardsContainer{
@@ -109,11 +109,16 @@
     .speakerPageIndicator{
 
         .indicatorContainer{
+            display: flex;
+            flex-flow: row nowrap;
+
+            justify-content: center;
+
 
             .indicatorOuter{
 
                 border-radius: 50%;
-
+                margin: 1px;
                 width: 15px;
                 height: 15px;
                 background: #463f8c;
@@ -126,7 +131,7 @@
                     border: 1px solid red;
                     background: #ffffff;
                     cursor: pointer;
-                    
+
                     .indicatorInner{
                         width: 10px;
                         height: 10px;

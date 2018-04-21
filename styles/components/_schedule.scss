@@ -9,11 +9,13 @@
 }
 
 .scheduleContentContainer{
-
+    display: flex;
+    flex-flow: row wrap;
 
 
     .datesContainer{
-
+        flex: 1 1 280px;
+        background: lightpink;
 
         .dateContent{
             border: 1px solid #ececec;
@@ -37,9 +39,11 @@
 
     @at-root{
         .scheduleContent{
-    
+        flex: 4 1 300px;    
+        background: lightgray;
             .schedule{
-                
+                display: flex;
+                flex-flow: row nowrap;
 
                 .scheduleImg{
                     border-radius: 50%;
@@ -48,6 +52,8 @@
     
                     width: 82px;
                     height: 82px;
+
+                    flex-shrink: 0;
                 }
                 @at-root{
                     .scheduleDescription{

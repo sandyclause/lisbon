@@ -14,8 +14,8 @@
 
 
     .datesContainer{
-        flex: 1 1 280px;
-        background: lightpink;
+        flex: 1 1 200px;
+        padding: 0 30px;
 
         .dateContent{
             border: 1px solid #ececec;
@@ -39,11 +39,37 @@
 
     @at-root{
         .scheduleContent{
-        flex: 4 1 300px;    
-        background: lightgray;
+        flex: 4 1 300px;
+        border-left: 1.5px dashed #ececec;
+        margin: 0 30px;
+
             .schedule{
                 display: flex;
                 flex-flow: row nowrap;
+
+                position: relative;
+
+                // border-left: 1.5px dashed #ececec;
+                padding-left: 60px;
+
+                .borderMask{
+                    position: absolute;
+                    top: 0px;
+                    left: -1px;
+                    height: 50%;
+                    width: 1px;
+                    background: #fafafa;
+                }
+
+                &:before{
+                    position: absolute;
+                    top: 50%;
+                    width:30px;
+                    border-bottom:1.5px dashed #e0e0e0;
+                    content:"";
+                    display:inline-block;
+                    left:1px;                    
+                }
 
                 .scheduleImg{
                     border-radius: 50%;

@@ -23,6 +23,18 @@
             font-family: 'Poppins', sans-serif;
             padding: 20px 30px;
 
+            &:hover{
+                background: #e85889;
+                cursor: pointer;
+
+                .date{
+                    color: #f8c4d6;
+                }
+                .dateOrder{
+                    color: #ffffff;
+                }
+            }
+
             .date{
                 color: #b7b7b7;
                 font-size: 1.3rem;

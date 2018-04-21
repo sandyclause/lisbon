@@ -14,14 +14,14 @@
 
 
     .datesContainer{
-        flex: 1 1 200px;
-        padding: 60px 30px;
+        flex: 1 1 250px;
+        padding: 100px 30px;
 
         .dateContent{
             border: 1px solid #ececec;
             background: #ffffff;
             font-family: 'Poppins', sans-serif;
-            padding: 24px 30px;
+            padding: 20px 30px;
 
             .date{
                 color: #b7b7b7;
@@ -40,7 +40,7 @@
 
     @at-root{
         .scheduleContent{
-        flex: 4 1 300px;
+        flex: 4 1 400px;
         // border-left: 1.5px dashed #ececec;
         margin: 0 30px;
 
@@ -51,7 +51,7 @@
                 position: relative;
 
                 border-left: 1.5px dashed #ececec;
-                padding: 35px 60px;
+                padding: 35px 0px 35px 60px;
 
                 .borderMaskTop{
                     position: absolute;
@@ -92,7 +92,8 @@
                 }
                 @at-root{
                     .scheduleDescription{
-                        
+                        padding-left: 40px;
+
                         span{
                             color: #777777;
                             font-size: 1.3rem;
@@ -109,6 +110,7 @@
                             color: #222222;
                             font-size: 1.8rem;
                             font-weight: 700;
+                            margin: 10px 0;
                         }
                         p:nth-of-type(3){
                             color: #666666;

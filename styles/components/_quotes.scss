@@ -1,0 +1,73 @@
+#quotes{
+    background: #463f8c;
+    padding: 150px 0;
+}
+
+.quotesSectionContainer{
+    display: flex;
+    flex-flow: row nowrap;
+
+}
+
+
+.quoteImgContainer{
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 0 20px;
+
+    .quoteImg{
+        width: 58px;
+        height: 58px;
+        border-radius: 50%;
+        border: 6px solid #463f8c;        
+        overflow: hidden;
+        margin-bottom: 30px;
+        
+        &:hover{
+            border: 6px solid #ececec;
+
+        }
+    }
+}
+
+.quoteSection{
+    max-width: 450px;
+    margin: 0 100px;
+    
+    .quoteTitle{
+        font-family: 'Raleway', sans-serif;
+        color: #fafafa;
+        font-size: 3rem;
+        font-weight: 700;
+        margin: 0;
+        position: relative;
+        
+
+        &:before{
+            font-family: Helvetica, sans-serif;
+            content: "“";
+            position: absolute;
+            left: -70px;
+            top: -5px;
+            font-size: 100px;
+        }
+    }
+    .quoteContent{
+        font-family: 'Poppins', sans-serif;
+        color: #bfb9f6;
+        font-size: 1.7rem;
+        font-style: italic;
+        line-height: 28px;
+    }
+    .quoteAuthor{
+        font-family: 'Poppins', sans-serif;
+        color: #fafafa;
+        font-size: 1.8rem;
+
+        span{
+            font-size: 1.7rem;
+            font-style: italic;
+            color: #bfb9f6;
+        }
+    }
+}

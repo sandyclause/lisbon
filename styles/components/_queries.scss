@@ -1,0 +1,15 @@
+@media (max-width: 480px) {
+    .quotesSectionContainer{
+        flex-flow: row wrap;
+
+        .quoteSection{
+            margin: 0;
+        }
+    }
+    .quoteImgContainer{
+        flex-flow: row wrap;
+        justify-content: space-around;
+    
+        flex-grow: 1;
+    }
+}

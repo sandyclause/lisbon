@@ -15,10 +15,11 @@
 
     .datesContainer{
         flex: 1 1 200px;
-        padding: 0 30px;
+        padding: 60px 30px;
 
         .dateContent{
             border: 1px solid #ececec;
+            background: #ffffff;
             font-family: 'Poppins', sans-serif;
             padding: 24px 30px;
 
@@ -40,7 +41,7 @@
     @at-root{
         .scheduleContent{
         flex: 4 1 300px;
-        border-left: 1.5px dashed #ececec;
+        // border-left: 1.5px dashed #ececec;
         margin: 0 30px;
 
             .schedule{
@@ -49,10 +50,10 @@
 
                 position: relative;
 
-                // border-left: 1.5px dashed #ececec;
-                padding-left: 60px;
+                border-left: 1.5px dashed #ececec;
+                padding: 35px 60px;
 
-                .borderMask{
+                .borderMaskTop{
                     position: absolute;
                     top: 0px;
                     left: -1px;
@@ -60,6 +61,14 @@
                     width: 1px;
                     background: #fafafa;
                 }
+                .borderMaskBottom{
+                    position: absolute;
+                    bottom: 0px;
+                    left: -1px;
+                    height: 50%;
+                    width: 1px;
+                    background: #fafafa;
+                }                
 
                 &:before{
                     position: absolute;

@@ -1,4 +1,50 @@
-.newsContainer{
+.newsContentContainer{
+    background: lightpink;
 
-    
+    .newsTitle{
+        font-family: 'Poppins', sans-serif;
+        color: #222222;
+        font-size: 2.2rem;
+        font-weight: 600;
+    }
+    .newsAuthor{
+        color: #ababaab;
+        font-size: 1.3rem;
+        font-weight: 400;
+    }
+    .newsContent{
+        color: #777777;
+        font-size: 1.4rem;
+        font-weight: 400;
+
+        margin-bottom: 45px;
+    }
+
+}
+
+.newsFlowContainer{
+    display: flex;
+    flex-flow: row wrap;
+
+    img{
+        max-width: 370px;
+        max-height: 300px;
+    }
+    .newsContainer{
+        // align-self: flex-start;
+    }
+    .newsContainer--horizontal{
+        display: flex;
+        flex-flow: row nowrap;
+
+    }
+    .newsContainer--vertical{
+        display: flex;
+        flex-flow: column nowrap;
+
+        align-self: flex-end;
+    }
+    .newsContentContainer{
+        align-self: flex-start;
+    }
 }

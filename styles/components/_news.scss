@@ -1,11 +1,22 @@
+.newsSectionContainer{
+
+
+
+}
+
 .newsContentContainer{
-    background: lightpink;
+    background: #f4f4f4;
+    padding: 45px 40px;
+
 
     .newsTitle{
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Raleway', sans-serif;
         color: #222222;
         font-size: 2.2rem;
         font-weight: 600;
+
+        margin: 0;
+
     }
     .newsAuthor{
         color: #ababaab;
@@ -20,31 +31,117 @@
         margin-bottom: 45px;
     }
 
+
 }
 
 .newsFlowContainer{
     display: flex;
     flex-flow: row wrap;
 
-    img{
-        max-width: 370px;
-        max-height: 300px;
-    }
+    position: relative;
+
     .newsContainer{
-        // align-self: flex-start;
+        // float: left;
+        
+
+ 
     }
-    .newsContainer--horizontal{
+
+    .newsContainer--duo{
         display: flex;
         flex-flow: row nowrap;
 
+        position: absolute;
+        top: 330px;
+
+        .newsContentContainer{
+            margin-right: 30px;
+        }
     }
+
+    .newsContainer--horizontal{
+        margin-right: 30px;
+        display: flex;
+        flex-flow: row nowrap;
+
+        align-self: flex-start;
+
+        .newsContentContainer{
+
+            padding-left: 60px;
+            max-width: 400px;
+        }
+    }
+
     .newsContainer--vertical{
         display: flex;
-        flex-flow: column nowrap;
+        flex-flow: column wrap;
 
-        align-self: flex-end;
+        background: #f4f4f4;
+
+        .newsContentContainer{
+            margin-top: 30px;
+        }
     }
-    .newsContentContainer{
-        align-self: flex-start;
+
+    
+
+    img{
+        max-width: 370px;
+        max-height: 300px;        
     }
 }
+
+.newsContentContainer{
+    max-width: 370px;
+    max-height: 300px;
+}
+
+
+@media (max-width: 1224px){
+    .newsSectionContainer{
+        background: #f4f4f4;
+    }
+    .newsFlowContainer{
+        justify-content: center;
+    }
+    .newsContainer--duo{
+        position: static !important;
+    }
+    .newsContainer--horizontal{
+        margin: 0 !important;
+    }
+    .newsContainer--vertical{
+        flex-flow: row wrap !important;
+
+        .newsContentContainer{
+            margin-left: 30px;
+        }
+    }
+    .newsContainer--duo{
+        background: #f4f4f4;
+
+        .newsContentContainer:last-of-type{
+            margin: 0;
+
+        }
+    }
+}
+
+@media(max-width:864px){
+    .newsContainer--duo{
+        flex-flow: column nowrap !important;
+    }
+    .newsContainer--horizontal{
+        flex-flow: column nowrap !important;
+    }
+    .newsContainer--vertical{
+        flex-flow: column nowrap !important;
+    }
+}
+
+
+
+
+
+

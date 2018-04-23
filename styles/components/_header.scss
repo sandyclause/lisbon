@@ -9,21 +9,95 @@ header{
 
     color: white;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
 
     .wrapper{
         display: flex;
-        justify-content: center;
-        align-items: center;
+        flex-flow: column nowrap;
+
+    }
+}
+
+nav{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+
+    
+    border-bottom: 2px solid rgba(224, 224, 224, 0.3);
+    box-shadow: 0 2px 0 rgba(224, 224, 224, 0.3);
+
+    .navBarSearch{
+        display: flex;
+        flex-flow: row nowrap;
+
+        .navSearch{
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: #e85889;
+            margin-left: 20px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            a{
+                color: #ffffff;
+                font-size: 1.5rem;
+            }
+        }        
+    }
+    .logoTopNav{
+        width: 150px;
+        height: 80px;
+
+        flex-shrink: 0;
+    }
+        @at-root{
+            .topnav{
+                display: flex;
+                flex-flow: row nowrap;
+
+                a{
+                    text-align: center;
+                    color: #ffffff;
+                    padding: 15px;
+                    text-decoration: none;
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                    text-transform: uppercase;
+
+                    &:hover{
+                        color: pink;
+                    }
+                }
+
+
+                .icon{
+                    display: none;
+                }
+               
+              
+
+            }
+   
     }
 }
 
 .headerTitleContainer{
     text-align: center;
-    background: red;
     max-width: 750px;
+
+    position: absolute;
+
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
     svg{
         background: green;

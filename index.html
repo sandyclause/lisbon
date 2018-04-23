@@ -11,9 +11,29 @@
 
 <body>
     <header>
-       <div class="wrapper">
+        <div class="wrapper">
            <nav>
+                <div class="logoTopNav">
+                    <img src="images/logo.png" alt="lisbon logo">
+                </div>
+                <div class="navBarSearch">
+                    <div class="topnav" id="myTopnav">
+                        <a href="#home">home</a>
+                        <a href="#about">about</a>
+                        <a href="#speakers">speakers</a>
+                        <a href="#pages">pages</a>
+                        <a href="#sponsors">sponsors</a>
+                        <a href="#blog">blog</a>
+                        <a href="#venues">venues</a>
+                        <a href="#contact">contact us</a>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+                    </div>
+    
+                    <div class="navSearch">
+                        <a href="#search"><i class="fas fa-search"></i></a>
+                    </div>
 
+                </div>
            </nav>
            <div class="headerTitleContainer">
                 <i class="fas fa-microphone"></i>
@@ -580,12 +600,23 @@
         </div>
     </footer>
 
-
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        } 
+    </script>
 
 
 
 
     <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
         crossorigin="anonymous"></script>
+
+
 </body>
 </html>

@@ -1,0 +1,84 @@
+.contactFooterContainer{
+    background: #1b1b1b;
+}
+
+.contactFooterContent{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    justify-items: center;
+
+    background: #1b1b1b;
+    
+    justify-content: space-between;
+    .contact{
+        display: flex;
+        flex-flow: row nowrap;
+
+        flex: 1 1 300px;
+
+        padding: 40px 0px 40px 90px;
+
+        p{
+            padding-left: 36px;
+            margin: 0;
+            color: #ababab;
+        }
+    }
+}
+
+.contactIcon{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #2f2f2f;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-shrink: 0;
+
+    svg{
+        font-size: 2rem;
+        color: #ffffff;
+    }
+}
+
+.footerContainer{
+    background: #100f0f;
+
+    .wrapper{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+
+        .logoFooter{
+            margin: 40px 0;
+        }
+    }
+
+    .footerNav a{
+        font-family: 'Poppins', sans-serif;
+        color: #ababab;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 1.4rem;
+        text-decoration: none;
+        padding: 20px;
+
+        &:hover{
+            color: #ffffff;
+        }
+    }
+
+    .copyRight{
+        color: #ffffff;
+        font-size: 1.5rem;
+        margin: 40px 0;
+
+        span{
+            color: #e85889;
+        }
+    }
+}

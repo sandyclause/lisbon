@@ -26,7 +26,7 @@
                         <a href="#blog">blog</a>
                         <a href="#venues">venues</a>
                         <a href="#contact">contact us</a>
-                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+                        <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">&#9776;</a>
                     </div>
     
                     <div class="navSearch">
@@ -607,8 +607,8 @@
     </footer>
 
     <script>
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
+        responsiveNav = () => {
+            const x = document.getElementById("myTopnav");
             if (x.className === "topnav") {
                 x.className += " responsive";
             } else {

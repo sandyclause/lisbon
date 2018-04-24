@@ -17,7 +17,13 @@
 
         flex: 1 1 300px;
 
-        padding: 40px 0px 40px 90px;
+        padding: 0 39px;
+        margin: 40px 0;
+        
+        &:not(:last-of-type){
+            border-right: 2px solid rgba(88,88,88,0.58);
+
+        }
 
         p{
             padding-left: 36px;
@@ -47,6 +53,30 @@
 
 .footerContainer{
     background: #100f0f;
+    position: relative;
+
+    &:before{
+        content: "";
+        border-left: 30px solid transparent; 
+        border-right: 30px solid transparent; 
+        border-bottom: 25px solid #100f0f;
+        position: absolute;
+        left: calc(50% - 30px);
+
+        top: -24px;
+
+    }
+
+    .toTopPage{
+        position: absolute;
+        left: calc(50% - 6px);
+        top: -10px;
+
+        svg{
+            font-size: 1.5rem;
+            color: #ffffff
+        }
+    }
 
     .wrapper{
         display: flex;

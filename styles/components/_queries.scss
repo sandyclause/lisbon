@@ -1,9 +1,17 @@
 @media (max-width: 480px) {
+
+    .contactFooterContent{
+        padding: 20px;
+    }
+    #news .wrapper{
+        width: 100%;
+    }
     .quotesSectionContainer{
         flex-flow: row wrap;
 
         .quoteSection{
             margin: 0;
+            text-align: center;
         }
     }
     .quoteImgContainer{
@@ -25,6 +33,9 @@
         }
         .borderMaskTop, .borderMaskBottom{
             display: none;
+        }
+        .scheduleImg{
+            margin: 20px 0 10px;
         }
     }
 
@@ -51,17 +62,38 @@
 }
 
 @media(max-width:864px){
+    .counterContainer .counterTitleContainer{
+        text-align: center;
+    }
+    
     .newsFlowContainer{
+        .newsContainer{
+            margin: 10px !important;
+        }
+        .newsContentContainer{
+            margin: 0 !important;
+            margin-bottom: 50px !important;
+            padding: 20px 0 !important;
+        }        
+        .newsContentContainer .button{
+            margin: 0;
+        }
         .newsContainer--duo{
             flex-flow: column nowrap !important;
+
         }
         .newsContainer--horizontal{
             flex-flow: column nowrap !important;
+
         }
         .newsContainer--vertical{
             flex-flow: column nowrap !important;
+
         }
 
+    }
+    .newsSectionContainer .sectionTitleContainer{
+        padding: 0 20px;
     }
 
     .contactFooterContainer{
@@ -71,6 +103,13 @@
             border: none !important;
         }
     }
+    .sectionTitleContainer{
+        text-align: center;
+
+        .sectionTitleContainer__subtitle{
+            text-align: center;
+        }
+    }    
 }
 
 @media (max-width: 1050px){

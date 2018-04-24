@@ -14,7 +14,7 @@
     }
 
     .counterTitleContainer{
-        flex: 1 1 250px;
+        flex: 1 1 220px;
         align-self: flex-start;
         
         .counterSubtitle{
@@ -37,7 +37,7 @@
         flex-flow: row wrap;
         font-size: 2.2rem;
         align-items: center;
-
+        justify-content: center;
         flex: 1 1 320px;
         align-self: flex-start;
 
@@ -87,9 +87,10 @@
 
         flex: 1 1 270px;
         align-self: flex-start;
+        justify-content: center;
 
         a{
-            margin-right: 13px;
+            margin-left: 13px;
         }
         
     }

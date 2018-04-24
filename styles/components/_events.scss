@@ -112,7 +112,7 @@
                 margin: 38px auto 0;
 
                 input[type="text"]{
-                    flex: 1 1;
+                    flex: 1 1 auto;
 
                     background: #463f8c;
                     color: #ffffff;
@@ -132,7 +132,7 @@
                     }
                 }
                 input[type="submit"]{
-                    flex: 0 1;
+                    flex: 0 1 auto;
                 }
             }
         }

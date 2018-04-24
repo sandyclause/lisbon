@@ -467,24 +467,51 @@
         <div class="wrapper">
             <div class="quotesSectionContainer">
                 <div class="quoteImgContainer">
-                    <div class="quoteImg">
+                    <div class="quoteImg" id="quote1" onmouseover="showQuote(this)">
                         <img src="images/quote-1.png" alt="girl with glasses">
                     </div>
-                    <div class="quoteImg">
+                    <div class="quoteImg" id="quote2" onmouseover="showQuote(this)">
                         <img src="images/quote-2.png" alt="guy with glasses">
                     </div>
-                    <div class="quoteImg">
+                    <div class="quoteImg" id="quote3" onmouseover="showQuote(this)">
                         <img src="images/quote-3.png" alt="girl with no glasses">
                     </div>
-                    <div class="quoteImg">
+                    <div class="quoteImg" id="quote4" onmouseover="showQuote(this)">
                         <img src="images/quote-4.png" alt="guy with no glasses">
                     </div>
                 </div>
 
-                <div class="quoteSection">
+                <div class="quoteSection show" id="quoteShow1">
                     <p class="quoteTitle">In Case you needed something fun and pointless</p>
                     <p class="quoteContent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt nemo facilis voluptates, maiores distinctio eveniet animi voluptatibus! Harum tenetur ipsam aspernatur ducimus ad alias iusto? Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, voluptatem!</p>
                     <p class="quoteAuthor">David Warner - <span>Artist</span></p>
+                </div>
+
+                <div class="quoteSection" id="quoteShow2">
+                    <p class="quoteTitle">Something fun and exciting</p>
+                    <p class="quoteContent">Harum tenetur ipsam aspernatur ducimus ad alias iusto? Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Et, voluptatem!</p>
+                    <p class="quoteAuthor">David Warner -
+                        <span>Artist</span>
+                    </p>
+                </div>
+
+                <div class="quoteSection" id="quoteShow3">
+                    <p class="quoteTitle">Not fun and exciting</p>
+                    <p class="quoteContent">Incidunt nemo facilis voluptates, maiores distinctio eveniet
+                        animi voluptatibus! Harum tenetur ipsam aspernatur ducimus ad alias iusto? Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Et, voluptatem!</p>
+                    <p class="quoteAuthor">David Warner -
+                        <span>Artist</span>
+                    </p>
+                </div>
+
+                <div class="quoteSection" id="quoteShow4">
+                    <p class="quoteTitle">Very exciting</p>
+                    <p class="quoteContent">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta voluptatibus, suscipit placeat ex mollitia delectus laboriosam! Ut delectus inventore nobis, reprehenderit ea dicta quidem aspernatur. Iste earum nesciunt quae mollitia!</p>
+                    <p class="quoteAuthor">David Warner -
+                        <span>Artist</span>
+                    </p>
                 </div>
             </div>
         </div>
@@ -607,6 +634,7 @@
     </footer>
 
     <script>
+        // responsive nav
         responsiveNav = () => {
             const x = document.getElementById("myTopnav");
             if (x.className === "topnav") {
@@ -615,6 +643,34 @@
                 x.className = "topnav";
             }
         } 
+
+        // quote hover display
+        function showQuote(obj){
+            x = obj.id;
+
+            if(x === "quote1"){
+                document.getElementById('quoteShow1').style.display = "block";
+                document.getElementById('quoteShow2').style.display = "none";
+                document.getElementById('quoteShow3').style.display = "none";
+                document.getElementById('quoteShow4').style.display = "none";
+            } else if(x === "quote2"){
+                document.getElementById('quoteShow2').style.display = "block";
+                document.getElementById('quoteShow1').style.display = "none";
+                document.getElementById('quoteShow3').style.display = "none";
+                document.getElementById('quoteShow4').style.display = "none";                
+            } else if (x === "quote3") {
+                document.getElementById('quoteShow3').style.display = "block";
+                document.getElementById('quoteShow2').style.display = "none";
+                document.getElementById('quoteShow1').style.display = "none";
+                document.getElementById('quoteShow4').style.display = "none";                
+            } else if (x === "quote4") {
+                document.getElementById('quoteShow4').style.display = "block";
+                document.getElementById('quoteShow2').style.display = "none";
+                document.getElementById('quoteShow3').style.display = "none";
+                document.getElementById('quoteShow1').style.display = "none";                
+            }
+        }
+
     </script>
 
 

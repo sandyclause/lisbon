@@ -30,9 +30,12 @@
     }
 }
 
+
+
 .quoteSection{
     max-width: 450px;
     margin: 0 100px;
+    display: none;
 
     .quoteTitle{
         font-family: 'Raleway', sans-serif;
@@ -70,4 +73,8 @@
             color: #bfb9f6;
         }
     }
+}
+
+#quoteShow1{
+    display: block;
 }

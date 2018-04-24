@@ -5,6 +5,10 @@
     }
     #news .wrapper{
         width: 100%;
+
+        .center{
+            text-align: center;
+        }
     }
     .quotesSectionContainer{
         flex-flow: row wrap;

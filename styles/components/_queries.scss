@@ -164,6 +164,10 @@
         display: flex;
         background: black;
         z-index: 20;
+
+        &:hover{
+            background: #e85889;
+        }
     }
 }
 

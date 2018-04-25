@@ -27,6 +27,9 @@
             border: 6px solid #ececec;
             cursor: pointer;
         }
+        &:focus{
+            text-decoration: underline;
+        }
     }
 }
 

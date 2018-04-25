@@ -74,6 +74,9 @@ nav{
                     &:hover{
                         color: pink;
                     }
+                    &:focus{
+                        text-decoration: underline;
+                    }
                 }
 
 
@@ -145,6 +148,9 @@ nav{
             &:hover{
                 color: #e85889;
                 background: #ffffff;
+            }
+            &:focus{
+                text-decoration: underline;
             }
         }
     }

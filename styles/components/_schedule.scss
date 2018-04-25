@@ -34,6 +34,9 @@
                     color: #ffffff;
                 }
             }
+            &:focus{
+                text-decoration: underline;
+            }
 
             .date{
                 color: #b7b7b7;

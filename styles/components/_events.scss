@@ -57,6 +57,9 @@
                 &:hover{
                     box-shadow: 2px 4px 18px 0px rgba(0, 0, 0, 0.13);
                 }
+                &:focus{
+                    text-decoration: underline;
+                }
 
                 .trioCardContent{
                     padding: 45px 25px;
@@ -89,6 +92,9 @@
                             &:hover{
                             color: #ffffff;
                             background: #e85889;
+                            }
+                            &:focus{
+                                text-decoration: underline;
                             }
                         }
 

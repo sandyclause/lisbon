@@ -89,6 +89,12 @@
         }
     }
 
+    .footerNav{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
     .footerNav a{
         font-family: 'Poppins', sans-serif;
         color: #ababab;

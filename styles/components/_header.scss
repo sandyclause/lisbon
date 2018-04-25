@@ -125,6 +125,8 @@ nav{
             display: inline;
             border-radius: 5px;
             border: none;
+
+            transition: all 0.4s;
             
             &--pink{
                 background: #e85889;
@@ -139,6 +141,10 @@ nav{
             &--noLeftBorder{
                 border-top-left-radius: 0;
                 border-bottom-left-radius: 0;
+            }
+            &:hover{
+                color: #e85889;
+                background: #ffffff;
             }
         }
     }

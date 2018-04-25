@@ -71,10 +71,7 @@ nav{
                     font-weight: 500;
                     text-transform: uppercase;
 
-                    display: flex;
-                    flex-flow: row nowrap;
-                    justify-content: flex-start;
-                    align-items: center;
+                    display: block;
 
                     &:hover{
                         color: pink;
